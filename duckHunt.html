@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+    <html lang="nl">    
+        <head>
+            <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+            <title>Duckhunt</title>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="duckHunt.css">
+            <script src="duckHunt.js">
+                var hits=0;
+                var misses="0";
+            </script>
+        </head>
+        <body>
+            
+            <div id="game-container" style= "background-image: url(images/stage.png); width:100%; height:753px;">
+                <img id="duck" src="images/duck.gif" alt="inventory item" onclick="clickHandler(hits);">
+                <div id="score" class="card-body rounded bg-dark border border-white">
+                    <p><strong class="text-success">HIT:</strong></p>
+                    <p><strong class="text-danger">MISS:</strong></p>
+                </div>
+            </div>  
+        </body>
+    </html>
